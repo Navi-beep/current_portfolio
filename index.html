@@ -203,32 +203,32 @@
                 //console.log(kittens[0])
 
 
-                let list = document.getElementById("nums");
+                //let list = document.getElementById("nums");
 
-                kittens.forEach((item)=> {
-                let meow = document.createElement("meow");
-                meow.innerText = item;
-                list.appendChild(meow);
-              });
+                //kittens.forEach((item)=> {
+                //let meow = document.createElement("meow");
+                //meow.innerText = item;
+               // list.appendChild(meow);
+             // });
 
+              
+              
+              
+              //const extraMeow = ''
+              
               async function getCatData(){
               let res =  await fetch(`https://catfact.ninja/fact?max_length=100`)
               let data =  await res.json();
               const toebeans = data;
-              console.log(toebeans)
+              console.log(toebeans.fact)
               return toebeans;
-              }
+
+              
+              };
 
               getCatData();
 
-              let catzen = document.getElementById("kittenCard");
-
-              console.log(toebeans)
-              data.forEach((item)=> {
-                let meow2 = document.createElement("meow2");
-                meow2.innerText = item;
-                catzen.appendChild(meow2);
-              });
+              
 
               
               
