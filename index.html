@@ -38,7 +38,7 @@
                 <div class="card" style="width: 18rem;">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text" id="kittenCard"></p>
+                    <p class="card-text" id="kitten"></p>
                   </div>
                 </div>
               </div>
@@ -203,34 +203,47 @@
                 //console.log(kittens[0])
 
 
-                //let list = document.getElementById("nums");
+                //let list = document.getElementById("kitten");
 
-                //kittens.forEach((item)=> {
-                //let meow = document.createElement("meow");
-                //meow.innerText = item;
-               // list.appendChild(meow);
-             // });
+               // kittens.forEach((item)=> {
+               // let meow = document.createElement("meow");
+              //  meow.innerText = item;
+             //  list.appendChild(meow);
+           //  });
 
               
               
-              
-              //const extraMeow = ''
+              //id of p in card is kitten
+
+              const catFact = []
               
               async function getCatData(){
               let res =  await fetch(`https://catfact.ninja/fact?max_length=100`)
               let data =  await res.json();
               const toebeans = data;
-              console.log(toebeans.fact)
+              console.log(toebeans)
               return toebeans;
 
+        
               
+
+              };
+
+
+
+              
+
+              //let maow = document.getElementById("kitten");
+
+
               };
 
               getCatData();
 
               
+              
 
-              let maow = document.getElementById("kittenCard");
+              
 
 
 
