@@ -38,7 +38,7 @@
                 <div class="card" style="width: 18rem;">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text" id="kittenCard">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                 </div>
               </div>
@@ -210,6 +210,29 @@
                 meow.innerText = item;
                 list.appendChild(meow);
               });
+
+              async function getCatData(){
+              let res =  await fetch(`https://catfact.ninja/fact?max_length=100`)
+              let data =  await res.json();
+              const toebeans = data;
+              console.log(toebeans)
+              return toebeans;
+              }
+
+              getCatData();
+
+              let catzen = document.getElementById("kittenCard");
+
+              console.log(toebeans)
+              data.forEach((item)=> {
+                let meow2 = document.createElement("meow2");
+                meow2.innerText = item;
+                catzen.appendChild(meow2);
+              });
+
+              
+              
+
 
               </script>
                 
