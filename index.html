@@ -164,7 +164,7 @@
             <div>
               <!--<h3 class="d-flex container-fluid justify-content-center">This is a list</h3>-->
               
-              <ul id="nums" class="d-flex container-fluid justify-content-center"></ul>
+              <div id="nums" class="d-flex container-fluid justify-content-center"></div>
               
 
               <ul id="animals" class="d-flex container-fluid justify-content-center"></ul>
@@ -205,11 +205,11 @@
 
                 let list = document.getElementById("nums");
 
-                //kittens.forEach((item)=> {
-                //let meow = document.createElement("meow");
-                //meow.innerText = item;
-                //list.appendChild(meow);
-              //});
+                kittens.forEach((item)=> {
+                let meow = document.createElement("meow");
+                meow.innerText = item;
+                list.appendChild(meow);
+              });
 
               </script>
                 
