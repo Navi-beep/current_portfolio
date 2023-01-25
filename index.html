@@ -37,7 +37,7 @@
             <div class="beans d-flex container-fluid justify-content-center">
                 <div class="card" style="width: 18rem;">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title d-flex container-fluid justify-content-center"><img src="https://placekitten.com/200/200"></img></h5>
                     <p class="card-text" id="kitten"></p>
                   </div>
                 </div>
@@ -215,16 +215,21 @@
               
               //id of p in card is kitten
 
-              //const catFact = []
+              const catFact = []
               
               async function getCatData(){
               let res =  await fetch(`https://catfact.ninja/fact?max_length=100`)
               let data =  await res.json();
               const toebeans = data;
-              console.log(toebeans)
+              console.log(toebeans.fact)
               return toebeans;
 
+              const catMeow = Object.entries(toebeans).map(([k,v]) => ({k, v}));
+            
               };
+
+
+              
 
 
               //let maow = document.getElementById("kitten");
