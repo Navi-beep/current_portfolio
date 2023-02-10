@@ -3,14 +3,14 @@
 }
 
 body {
-    background-color: rgb(26, 27, 29);
+    background-color: rgb(20, 21, 23);
 }
 
 .carousel-caption {
 
     position: absolute;
     top: 45%;
-    left: 0;
+    left: 20px;
     width: 100%;
 
 }
